@@ -1,6 +1,6 @@
-<h1 align="center"><b>𝚁𝚘𝚖𝚎𝚘𝚇𝚖𝚞𝚜𝚒𝚌</b></h1>
+<h1 align="center"><b>👉ʀᴏᴍᴇᴏxᴍᴜꜱɪᴄ  </b></h1>
 
-<h4 align="center"> RomeoXmusic A Powerful, Smart And Simple Bot To Play Audio And Video Song In Telegram<br> ... Written With Python and Telethon...</h4>
+<h4 align="center"> ʀᴏᴍᴇᴏ-x-ᴍᴜꜱɪᴄ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ, ꜱᴍᴀʀᴛ ᴀɴᴅ ꜱɪᴍᴘʟᴇ ʙᴏᴛ ᴛᴏ ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ꜱᴏɴɢ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ<ʙʀ> ... ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ ᴘʏᴛʜᴏɴ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ.</h4>
 
 <p align="center"><a href="https://telegram.dog/its_star_boi"><img src="https://www.linkpicture.com/q/IMG_20230312_002256_367_1.jpg"width="400"></a></p>
 
