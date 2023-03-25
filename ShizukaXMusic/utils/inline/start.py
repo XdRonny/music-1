@@ -19,18 +19,18 @@ def start_pannel(_):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
+                InlineKeyboardButton(text=_["SUPPORT_GROUP"], url=f"https://t.me/CrazyWorldChating"),
+                InlineKeyboardButton(text=_["ᴶᴼᴵᴺ ᴳᴿᴼᵁᴾ"], url=f"https://t.me/Hindichat_House"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
+                [InlineKeyboardButton(text=_["SUPPORT_GROUP"], url=f"https://t.me/CrazyWorldChating")]
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
+                [InlineKeyboardButton(text=_["ᴶᴼᴵᴺ ᴳᴿᴼᵁᴾ"], url=f"https://t.me/Hindichat_House")]
             )
     return buttons
 
@@ -42,18 +42,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons.append(
             [
-                InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"),
-                InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
+                InlineKeyboardButton(text=_["SUPPORT_GROUP"], url=f"https://t.me/CrazyWorldChating"),
+                InlineKeyboardButton(text=_["ᴶᴼᴵᴺ ᴳᴿᴼᵁᴾ"], url=f"https://t.me/Hindichat_House"),
             ]
         )
     else:
         if SUPPORT_CHANNEL:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}")]
+                [InlineKeyboardButton(text=_["SUPPORT_GROUP"], url=f"https://t.me/CrazyWorldChating")]
             )
         if SUPPORT_GROUP:
             buttons.append(
-                [InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}")]
+                [InlineKeyboardButton(text=_["ᴶᴼᴵᴺ ᴳᴿᴼᵁᴾ"], url=f"https://t.me/Hindichat_House")]
             )
     buttons.append(
         [
