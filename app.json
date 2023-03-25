@@ -45,7 +45,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5463205082",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
@@ -55,12 +55,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
-        "value": "https://t.me/Best_FriendsFor_Ever",
+        "value": "https://t.me/CrazyWorldChating",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/Star_X_Network",
+        "value": "https://t.me/EX_Network",
         "required": false
       },
       "PING_IMG_URL": {
@@ -70,7 +70,7 @@
       },
       "START_IMG_URL": {
         "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "",
+        "value": "https://www.linkpicture.com/q/IMG_20230312_002256_367_1.jpg",
         "required": false
       },
       "HEROKU_API_KEY": {
