@@ -49,7 +49,7 @@ class Userbot(Client):
             await self.one.start()
             try:
                 await self.one.join_chat("Hindichat_house")
-                await self.one.join_chat("EX_Network")
+                await self.one.join_chat("ROMEO_NETWORK")
             except:
                 pass
             assistants.append(1)
@@ -80,7 +80,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("Hindichat_house")
-                await self.two.join_chat("EX_Network")
+                await self.two.join_chat("ROMEO_NETWORK")
             except:
                 pass
             assistants.append(2)
@@ -111,7 +111,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("Hindichat_house")
-                await self.three.join_chat("EX_Network")
+                await self.three.join_chat("ROMEO_NETWORK")
             except:
                 pass
             assistants.append(3)
@@ -142,7 +142,7 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("Hindichat_house")
-                await self.four.join_chat("EX_Network")
+                await self.four.join_chat("ROMEO_NETWORK")
             except:
                 pass
             assistants.append(4)
@@ -173,7 +173,7 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("Hindichat_house")
-                await self.five.join_chat("EX_Network")
+                await self.five.join_chat("ROMEO_NETWORK")
             except:
                 pass
             assistants.append(5)
