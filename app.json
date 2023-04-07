@@ -55,12 +55,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
-        "value": "https://t.me/CrazyWorldChating",
+        "value": "https://t.me/RomeoSupport",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/EX_Network",
+        "value": "https://t.me/ROMEO_NETWORK",
         "required": false
       },
       "PING_IMG_URL": {
