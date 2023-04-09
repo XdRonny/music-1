@@ -40,7 +40,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="📡 ꜱᴏᴜʀᴄᴇ🥀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"
+                text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"
             ),
         ],
         [
@@ -48,7 +48,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="📡ᴊᴏɪɴ ᴄʜᴀᴛ🥀 💌", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
         ],
     ]
     return buttons
@@ -68,14 +68,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="📡 ꜱᴏᴜʀᴄᴇ🥀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
+            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="📡ᴊᴏɪɴ ᴄʜᴀᴛ🥀 💌", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
         ],
     ]
     return buttons
@@ -91,14 +91,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="📡 ꜱᴏᴜʀᴄᴇ🥀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
+            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="📡ᴊᴏɪɴ ᴄʜᴀᴛ🥀💌", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
         ],
     ]
     return buttons
