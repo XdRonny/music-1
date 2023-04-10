@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils.database import is_muted, mute_on
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from kannadiga import app
+from kannadiga.core.call import Shizuka
+from kannadiga.utils.database import is_muted, mute_on
+from kannadiga.utils.decorators import AdminRightsCheck
 
 # Commands
 MUTE_COMMAND = get_command("MUTE_COMMAND")
@@ -22,7 +22,7 @@ async def mute_admin(cli, message: Message, _, chat_id):
     if await is_muted(chat_id):
         return await message.reply_text(_["admin_5"], disable_web_page_preview=True)
     await mute_on(chat_id)
-    await Shizuka.mute_stream(chat_id)
+    await kannadigabot.mute_stream(chat_id)
     await message.reply_text(
         _["admin_6"].format(message.from_user.mention), disable_web_page_preview=True
     )
