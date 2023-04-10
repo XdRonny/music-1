@@ -4,9 +4,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import get_lang, set_lang
-from ShizukaXMusic.utils.decorators import ActualAdminCB, language, languageCB
+from kannadiga import app
+from kannadiga.utils.database import get_lang, set_lang
+from kannadiga.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
@@ -25,8 +25,8 @@ def lanuages_keyboard(_):
     )
     keyboard.row(
         InlineKeyboardButton(
-            text="🇱🇰 සිංහල 🇱🇰",
-            callback_data=f"languages:si",
+            text="🇮🇳 ಕನ್ನಡ 🇮🇳",
+            callback_data=f"languages:kn",
         ),
         InlineKeyboardButton(
             text="🇦🇿 Azərbaycan 🇦🇿",
