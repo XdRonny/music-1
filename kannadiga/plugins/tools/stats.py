@@ -12,11 +12,11 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.userbot import assistants
-from ShizukaXMusic.misc import SUDOERS, pymongodb
-from ShizukaXMusic.plugins import ALL_MODULES
-from ShizukaXMusic.utils.database import (
+from kannadiga import YouTube, app
+from kannadiga.core.userbot import assistants
+from kannadiga.misc import SUDOERS, pymongodb
+from kannadiga.plugins import ALL_MODULES
+from kannadiga.utils.database import (
     get_global_tops,
     get_particulars,
     get_queries,
@@ -26,8 +26,8 @@ from ShizukaXMusic.utils.database import (
     get_top_chats,
     get_topp_users,
 )
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.inline.stats import (
+from kannadiga.utils.decorators.language import language, languageCB
+from kannadiga.utils.inline.stats import (
     back_stats_buttons,
     back_stats_markup,
     get_stats_markup,
@@ -171,7 +171,7 @@ async def top_users_ten(client, CallbackQuery: CallbackQuery, _):
                 details = stats.get(items)
                 title = (details["title"][:35]).title()
                 if items == "telegram":
-                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Best_FriendsFor_Ever) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                    msg += f"🌹 [ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/do_jism_ek_jaan_op) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                 else:
                     msg += f"🌹 [{title}](https://www.youtube.com/watch?v={items}) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
 
