@@ -3,10 +3,10 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from ShizukaXMusic.utils.decorators import language
-from ShizukaXMusic.utils.inline.settings import playmode_users_markup
+from kannadiga import app
+from kannadiga.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from kannadiga.utils.decorators import language
+from kannadiga.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
