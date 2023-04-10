@@ -5,10 +5,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils import bot_sys_stats
-from ShizukaXMusic.utils.decorators.language import language
+from kannadiga import app
+from kannadiga.core.call import kannadigabot
+from kannadiga.utils import bot_sys_stats
+from kannadiga.utils.decorators.language import language
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
