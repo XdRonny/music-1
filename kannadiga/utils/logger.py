@@ -1,6 +1,6 @@
 from config import LOG, LOG_GROUP_ID, MUSIC_BOT_NAME
-from ShizukaXMusic.utils.database import is_on_off
-from ShizukaXMusic import app
+from kannadiga.utils.database import is_on_off
+from kannadiga import app
 
 
 async def play_logs(message, streamtype):
