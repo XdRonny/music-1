@@ -1,12 +1,12 @@
 {
-    "name": "RomeoXmusicBot",
-    "description": "Romeo Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://www.linkpicture.com/q/IMG_20230312_002256_367_1.jpg",
+    "name": "kannadiga music",
+    "description": "kannadiga Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://graph.org/file/96bb5d6d034785cd2ada4.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Shizuka",
+    "kannadigabot",
     "telegram-music-bot",
     "telegram-bot",
     "pyrogram"
@@ -15,12 +15,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "8117180",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "34ce938c495ce1b2ae0e97fb237e8695",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
@@ -35,17 +35,17 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Ramdi's database for you.",
-        "value": "",
+        "value": "mongodb+srv://zewdatabase:ijoXgdmQ0NCyg9DO@zewgame.urb3i.mongodb.net/ontap?retryWrites=true&w=majority",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "⁪⁬",
+        "value": "Kannadiga⁪⁬",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "6181817811",
         "required": true
       },
       "STRING_SESSION": {
@@ -55,12 +55,12 @@
       },
       "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
-        "value": "https://t.me/RomeoSupport",
+        "value": "https://t.me/do_jism_ek_jaan_op",
         "required": false
       },
       "SUPPORT_CHANNEL": {
         "description": "Your Updates Channel link",
-        "value": "https://t.me/ROMEO_NETWORK",
+        "value": "https://t.me/kannada_chatbox",
         "required": false
       },
       "PING_IMG_URL": {
@@ -70,7 +70,7 @@
       },
       "START_IMG_URL": {
         "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "https://www.linkpicture.com/q/IMG_20230312_002256_367_1.jpg",
+        "value": "https://graph.org/file/96bb5d6d034785cd2ada4.jpg",
         "required": false
       },
       "HEROKU_API_KEY": {
@@ -90,7 +90,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/itsromeo143/RomeoXmusicBot",
+        "value": "https://github.com/kannadigaXD/music",
         "required": true
       },
       "UPSTREAM_BRANCH": {
