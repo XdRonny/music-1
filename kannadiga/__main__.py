@@ -23,7 +23,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("ShizukaXMusic").error("Add Pyrogram string session and then try...")
+        LOGGER("kannadiga").error("Add Pyrogram string session and then try...")
     try:
         users = await get_gbanned()
         for user_id in users:
