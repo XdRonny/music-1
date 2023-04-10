@@ -21,9 +21,9 @@ from pytgcalls.types.stream import StreamAudioEnded
 
 import config
 from strings import get_string
-from ShizukaXMusic import LOGGER, YouTube, app
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.database import (
+from kannadiga import LOGGER, YouTube, app
+from kannadiga.misc import db
+from kannadiga.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_assistant,
@@ -39,10 +39,10 @@ from ShizukaXMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from ShizukaXMusic.utils.exceptions import AssistantErr
-from ShizukaXMusic.utils.inline.play import stream_markup, telegram_markup
-from ShizukaXMusic.utils.stream.autoclear import auto_clean
-from ShizukaXMusic.utils.thumbnails import gen_thumb
+from kannadiga.utils.exceptions import AssistantErr
+from kannadiga.utils.inline.play import stream_markup, telegram_markup
+from kannadiga.utils.stream.autoclear import auto_clean
+from kannadiga.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
@@ -584,4 +584,4 @@ class Call(PyTgCalls):
                 autoend[chat_id] = {}
 
 
-Shizuka = Call()
+kannadigabot = Call()
