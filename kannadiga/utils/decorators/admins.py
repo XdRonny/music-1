@@ -2,9 +2,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import (
+from kannadiga import app
+from kannadiga.misc import SUDOERS
+from kannadiga.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
