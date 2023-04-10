@@ -9,11 +9,11 @@ import config
 from config import BANNED_USERS
 from config.config import OWNER_ID, MUSIC_BOT_NAME
 from strings import get_command, get_string
-from ShizukaXMusic import Telegram, YouTube, app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.plugins.play.playlist import del_plist_msg
-from ShizukaXMusic.plugins.sudo.sudoers import sudoers_list
-from ShizukaXMusic.utils.database import (
+from kannadiga import Telegram, YouTube, app
+from kannadiga.misc import SUDOERS
+from kannadiga.plugins.play.playlist import del_plist_msg
+from kannadiga.plugins.sudo.sudoers import sudoers_list
+from kannadiga.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -23,9 +23,9 @@ from ShizukaXMusic.utils.database import (
     is_on_off,
     is_served_private_chat,
 )
-from ShizukaXMusic.utils.decorators.language import LanguageStart
-from ShizukaXMusic.utils.inline import help_pannel, private_panel, start_pannel
-from ShizukaXMusic.utils.command import commandpro
+from kannadiga.utils.decorators.language import LanguageStart
+from kannadiga.utils.inline import help_pannel, private_panel, start_pannel
+from kannadiga.utils.command import commandpro
 
 loop = asyncio.get_running_loop()
 
@@ -84,7 +84,7 @@ async def start_comm(client, message: Message, _):
                     details = stats.get(vidid)
                     title = (details["title"][:35]).title()
                     if vidid == "telegram":
-                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/Best_FriendsFor_Ever) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
+                        msg += f"🔗[ᴛᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ](https://t.me/nuclear_dpz_store) ** ᴩʟᴀʏᴇᴅ {count} ᴛɪᴍᴇs**\n\n"
                     else:
                         msg += f"🔗 [{title}](https://www.youtube.com/watch?v={vidid}) ** played {count} times**\n\n"
                 msg = _["ustats_2"].format(tot, tota, limit) + msg
@@ -270,13 +270,13 @@ async def welcome(client, message: Message):
             return
 
 
-@app.on_message(commandpro(["/alive", "Shizuka"]) & ~filters.edited)
+@app.on_message(commandpro(["/alive", "Agora"]) & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/0d048443e85813227f253.jpg",
-        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/its_star_boi) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
+        photo=f"https://telegra.ph/file/a54c01288f6f13a767478.mp4",
+        caption=f"""━━━━━━━━━━━━━━━━━━━━━━━━\n\n✪ ʜᴇʟʟᴏ, {MUSIC_BOT_NAME} ɪs ᴡᴏʀᴋɪɴɢ ᴀɴᴅ ғᴜɴᴄᴛɪᴏɴɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ\nᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](https://t.me/mr_agora) & [ᴏᴡɴᴇʀ](https://t.me/kannadigaxd) ᴍᴀᴋᴇ sᴜʀᴇ ᴛᴏ sᴛᴀʀ ᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛ ...\n\n━━━━━━━━━━━━━━━━━━━━━━━━
 """,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🌼 sʜɪᴢᴜᴋᴀ ᴄʜᴀᴛ 💮", url=f"https://t.me/Best_FriendsFor_Ever")]]
+            [[InlineKeyboardButton("🌼 Kannadiga Base💮", url=f"https://t.me/do_jism_ek_jaan_op")]]
         ),
     )
