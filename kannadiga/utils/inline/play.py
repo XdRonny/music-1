@@ -6,19 +6,19 @@ import random
 
 
 selections = [
-    "▁▄▂▇▄▅▄▅▃",
-    "▁▃▇▂▅▇▄▅▃",
-    "▃▁▇▂▅▃▄▃▅",
-    "▃▄▂▄▇▅▃▅▁",
-    "▁▃▄▂▇▃▄▅▃",
-    "▃▁▄▂▅▃▇▃▅",
-    "▁▇▄▂▅▄▅▃▄",
-    "▁▃▅▇▂▅▄▃▇",
-    "▃▅▂▅▇▁▄▃▁",
-    "▇▅▂▅▃▄▃▁▃",
-    "▃▇▂▅▁▅▄▃▁",
-    "▅▄▇▂▅▂▄▇▁",
-    "▃▅▂▅▃▇▄▅▃",
+    "𝗙",
+    "𝗙𝗖",
+    "𝗙𝗖𝗥",
+    "𝗙𝗖𝗥 𝗫",
+    "𝗙𝗖𝗥 𝗫 𝗧",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠 𝗔",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠 𝗔𝗚",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠 𝗔𝗚𝗢",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠 𝗔𝗚𝗢𝗥",
+    "𝗙𝗖𝗥 𝗫 𝗧𝗘𝗔𝗠 𝗔𝗚𝗢𝗥𝗔",
 ]
 
 
@@ -40,7 +40,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"
+                text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://t.me/KANNADIGAXD"
             ),
         ],
         [
@@ -48,7 +48,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/do_jism_ek_jaan_op"),
         ],
     ]
     return buttons
@@ -68,14 +68,14 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
+            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://t.me/KANNADIGAXD"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/do_jism_ek_jaan_op"),
         ],
     ]
     return buttons
@@ -91,14 +91,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["PL_B_2"],
                 callback_data=f"add_playlist {videoid}",
             ),
-            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://github.com/itsromeo143/RomeoXmusicBot"),
+            InlineKeyboardButton(text="𝐒𝐨𝐮𝐫𝐜𝐞 👀", url=f"https://t.me/KANNADIGAXD"),
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
-            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/Hindichat_House"),
+            InlineKeyboardButton(text="𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐭📡", url=f"https://t.me/do_jism_ek_jaan_op"),
         ],
     ]
     return buttons
@@ -147,11 +147,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"AgoraPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"AgoraPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -182,7 +182,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["📡ᴊᴏɪɴ ᴄʜᴀᴛ🥀"],
-                url=f"https://t.me/RomeoSupport",
+                url=f"https://t.me/do_jism_ek_jaan_op",
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
@@ -248,7 +248,7 @@ def panel_markup_1(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text=_["📡ᴊᴏɪɴ ᴄʜᴀᴛ🥀"],
-                url=f"https://t.me/RomeoSupport",
+                url=f"https://t.me/do_jism_ek_jaan_op",
             ),
         ],
         [
