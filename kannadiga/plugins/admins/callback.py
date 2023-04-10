@@ -12,10 +12,10 @@ from config import (
     TELEGRAM_VIDEO_URL,
     adminlist,
 )
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.misc import SUDOERS, db
-from ShizukaXMusic.utils.database import (
+from kannadiga import YouTube, app
+from kannadiga.core.call import Shizuka
+from kannadiga.misc import SUDOERS, db
+from kannadiga.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -26,11 +26,11 @@ from ShizukaXMusic.utils.database import (
     mute_on,
     set_loop,
 )
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.formatters import seconds_to_min
-from ShizukaXMusic.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
-from ShizukaXMusic.utils.stream.autoclear import auto_clean
-from ShizukaXMusic.utils.thumbnails import gen_thumb
+from kannadiga.utils.decorators.language import languageCB
+from kannadiga.utils.formatters import seconds_to_min
+from kannadiga.utils.inline.play import panel_markup_1, stream_markup, telegram_markup
+from kannadiga.utils.stream.autoclear import auto_clean
+from kannadiga.utils.thumbnails import gen_thumb
 
 wrong = {}
 
@@ -245,7 +245,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Shizuka.skip_stream(chat_id, videoid, video=status)
+                await kannadigabot.skip_stream(chat_id, videoid, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(_["call_9"])
             button = telegram_markup(_, chat_id)
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await CallbackQuery.edit_message_text(txt)
         else:
             try:
-                await Shizuka.skip_stream(chat_id, queued, video=status)
+                await kannadigabot.skip_stream(chat_id, queued, video=status)
             except Exception:
                 return await CallbackQuery.message.reply_text(_["call_9"])
             if videoid == "telegram":
@@ -337,7 +337,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await Shizuka.seek_stream(
+            await kannadigabot.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
