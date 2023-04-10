@@ -8,9 +8,9 @@ from pyrogram.raw import types
 import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
-from ShizukaXMusic import app, userbot
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import (
+from kannadiga import app, userbot
+from kannadiga.misc import SUDOERS
+from kannadiga.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
@@ -23,8 +23,8 @@ from ShizukaXMusic.utils.database import (
     update_particular_top,
     update_user_top,
 )
-from ShizukaXMusic.utils.decorators.language import language
-from ShizukaXMusic.utils.formatters import alpha_to_int
+from kannadiga.utils.decorators.language import language
+from kannadiga.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -97,7 +97,7 @@ async def braodcast_message(client, message, _):
         for chat in schats:
             chats.append(int(chat["chat_id"]))
         for i in chats:
-            if i == -1001750434488:
+            if i == -1001731550634:
                 continue
             try:
                 m = (
@@ -167,7 +167,7 @@ async def braodcast_message(client, message, _):
             sent = 0
             client = await get_client(num)
             async for dialog in client.iter_dialogs():
-                if dialog.chat.id == -1001750434488:
+                if dialog.chat.id == -1001731550634:
                     continue
                 try:
                     await client.forward_messages(
