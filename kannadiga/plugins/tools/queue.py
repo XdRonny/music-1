@@ -9,12 +9,12 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils import Shizukabin, get_channeplayCB, seconds_to_min
-from ShizukaXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from ShizukaXMusic.utils.decorators.language import language, languageCB
-from ShizukaXMusic.utils.inline import queue_back_markup, queue_markup
+from kannadiga. import app
+from kannadiga..misc import db
+from kannadiga..utils import Shizukabin, get_channeplayCB, seconds_to_min
+from kannadiga..utils.database import get_cmode, is_active_chat, is_music_playing
+from kannadiga..utils.decorators.language import language, languageCB
+from kannadiga..utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -167,7 +167,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     basic[videoid] = False
     buttons = queue_back_markup(_, what)
     med = InputMediaPhoto(
-        media="https://telegra.ph//file/6f7d35131f69951c74ee5.jpg",
+        media="https://telegra.ph/file/a54c01288f6f13a767478.mp4",
         caption=_["queue_1"],
     )
     await CallbackQuery.edit_message_media(media=med)
