@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from ShizukaXMusic.utils.decorators.language import language
+from kannadiga import app
+from kannadiga.misc import SUDOERS
+from kannadiga.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
+from kannadiga.utils.decorators.language import language
 
 # Commands
 
