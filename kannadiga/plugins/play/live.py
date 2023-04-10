@@ -1,10 +1,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from ShizukaXMusic import YouTube, app
-from ShizukaXMusic.utils.channelplay import get_channeplayCB
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.stream.stream import stream
+from kannadiga import YouTube, app
+from kannadiga.utils.channelplay import get_channeplayCB
+from kannadiga.utils.decorators.language import languageCB
+from kannadiga.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
