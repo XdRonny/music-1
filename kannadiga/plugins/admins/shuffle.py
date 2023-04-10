@@ -5,9 +5,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import db
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from kannadiga import app
+from kannadiga.misc import db
+from kannadiga.utils.decorators import AdminRightsCheck
 
 # Commands
 SHUFFLE_COMMAND = get_command("SHUFFLE_COMMAND")
