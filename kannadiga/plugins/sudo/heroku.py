@@ -15,15 +15,15 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import HAPP, SUDOERS, XCB
-from ShizukaXMusic.utils.database import (
+from kannadiga import app
+from kannadiga.misc import HAPP, SUDOERS, XCB
+from kannadiga.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from ShizukaXMusic.utils.decorators.language import language
-from ShizukaXMusic.utils.pastebin import Shizukabin
+from kannadiga.utils.decorators.language import language
+from kannadiga.utils.pastebin import Shizukabin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -62,7 +62,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Shizukabin(data)
+                link = await kannadigabin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
