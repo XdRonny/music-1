@@ -9,8 +9,8 @@ from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
 
 import config
-from ShizukaXMusic.utils.database import is_on_off
-from ShizukaXMusic.utils.formatters import time_to_seconds
+from kannadiga.utils.database import is_on_off
+from kannadiga.utils.formatters import time_to_seconds
 
 
 async def shell_cmd(cmd):
