@@ -22,7 +22,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = kannadigaBot()
+app = kannadiga()
 
 # Assistant Client
 userbot = Userbot()
