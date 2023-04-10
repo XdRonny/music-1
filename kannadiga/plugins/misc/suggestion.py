@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 import config
 from config import clean
 from strings import get_string
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import (
+from kannadiga import app
+from kannadiga.utils.database import (
     get_lang,
     get_private_served_chats,
     get_served_chats,
