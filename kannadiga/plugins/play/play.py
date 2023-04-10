@@ -9,23 +9,23 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from ShizukaXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils import seconds_to_min, time_to_seconds
-from ShizukaXMusic.utils.channelplay import get_channeplayCB
-from ShizukaXMusic.utils.database import is_video_allowed
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.decorators.play import PlayWrapper
-from ShizukaXMusic.utils.formatters import formats
-from ShizukaXMusic.utils.inline.play import (
+from kannadiga import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from kannadiga.core.call import Shizuka
+from kannadiga.utils import seconds_to_min, time_to_seconds
+from kannadiga.utils.channelplay import get_channeplayCB
+from kannadiga.utils.database import is_video_allowed
+from kannadiga.utils.decorators.language import languageCB
+from kannadiga.utils.decorators.play import PlayWrapper
+from kannadiga.utils.formatters import formats
+from kannadiga.utils.inline.play import (
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from ShizukaXMusic.utils.inline.playlist import botplaylist_markup
-from ShizukaXMusic.utils.logger import play_logs
-from ShizukaXMusic.utils.stream.stream import stream
+from kannadiga.utils.inline.playlist import botplaylist_markup
+from kannadiga.utils.logger import play_logs
+from kannadiga.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -514,7 +514,7 @@ async def anonymous_check(client, CallbackQuery):
         return
 
 
-@app.on_callback_query(filters.regex("ShizukaPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("Agora Server") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
