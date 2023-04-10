@@ -3,10 +3,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.utils.database import is_music_playing, music_on
-from ShizukaXMusic.utils.decorators import AdminRightsCheck
+from kannadiga import app
+from kannadiga.core.call import Shizuka
+from kannadiga.utils.database import is_music_playing, music_on
+from kannadiga.utils.decorators import AdminRightsCheck
 
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
@@ -22,7 +22,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"], disable_web_page_preview=True)
     await music_on(chat_id)
-    await Shizuka.resume_stream(chat_id)
+    await kannadigabot.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention), disable_web_page_preview=True
     )
