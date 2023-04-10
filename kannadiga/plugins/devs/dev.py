@@ -10,8 +10,8 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from config import OWNER_ID
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
+from kannadiga import app
+from kannadiga.misc import SUDOERS
 
 
 async def aexec(code, client, message):
