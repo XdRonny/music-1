@@ -2,13 +2,13 @@
 
 <h4 align="center"> ʀᴏᴍᴇᴏ-x-ᴍᴜꜱɪᴄ ᴀ ᴘᴏᴡᴇʀꜰᴜʟ, ꜱᴍᴀʀᴛ ᴀɴᴅ ꜱɪᴍᴘʟᴇ ʙᴏᴛ ᴛᴏ ᴘʟᴀʏ ᴀᴜᴅɪᴏ ᴀɴᴅ ᴠɪᴅᴇᴏ ꜱᴏɴɢ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ<ʙʀ> ... ᴡʀɪᴛᴛᴇɴ ᴡɪᴛʜ ᴘʏᴛʜᴏɴ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ.</h4>
 
-<p align="center"><a href="https://telegram.dog/its_star_boi"><img src="https://www.linkpicture.com/q/IMG_20230312_002256_367_1.jpg"width="400"></a></p>
+<p align="center"><a href="https://telegram.dog/its_star_boi"><img src="https://graph.org/file/96bb5d6d034785cd2ada4.jpg"width="400"></a></p>
 
 
 <p align="center">
-    <a href="https://github.com/itsRomeo143/RomeoXmusicBot"> <img src="https://img.shields.io/github/repo-size/its-star-boi/ShizukaXMusic?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/itsRomeo143/RomeoXmusicBot/commits/prince"> <img src="https://img.shields.io/github/last-commit/its-star-boi/ShizukaXMusic?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/itsRomeo143/RomeoXmusicBotsues> <img src="https://img.shields.io/github/issues/its-star-boi/ShizukaXMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/kannadigaXD/music"> <img src="https://img.shields.io/github/repo-size/kannadigaXD/music?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/kannadigaXD/music/commits/prince"> <img src="https://img.shields.io/github/last-commit/kannadigaXD/music?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/kannadigaXD/musicsues> <img src="https://img.shields.io/github/issues/its-star-boi/ShizukaXMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/itsRomeo143/RomeoXmusicBotnetwork/members"> <img src="https://img.shields.io/github/forks/its-star-boi/ShizukaXMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
@@ -112,7 +112,7 @@
 <br>
 ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴅᴇᴘʟᴏʏ 𝚁𝚘𝚖𝚎𝚘𝚇𝚖𝚞𝚜𝚒𝚌 ᴍᴜsɪᴄ ᴏɴ sᴄᴀʟɪɴɢᴏ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ʙʏ 
         
-<p align="center"><a href="https://my.scalingo.com/deploy?template=https://github.com/its-star-boi/ShizukaXMusic"> <img src="https://cdn.scalingo.com/deploy/button.svg" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://my.scalingo.com/deploy?template=https://github.com/kannadigaXD/music"> <img src="https://cdn.scalingo.com/deploy/button.svg" width="220" height="38.45"/></a></p>
     
 </details>
 
