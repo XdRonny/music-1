@@ -7,10 +7,10 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from config import BANNED_USERS
-from ShizukaXMusic import LOGGER, app, userbot
-from ShizukaXMusic.core.call import Shizuka
-from ShizukaXMusic.plugins import ALL_MODULES
-from ShizukaXMusic.utils.database import get_banned_users, get_gbanned
+from kannadiga import LOGGER, app, userbot
+from kannadiga.core.call import Shizuka
+from kannadiga.plugins import ALL_MODULES
+from kannadiga.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -35,24 +35,24 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("ShizukaXMusic.plugins" + all_module)
-    LOGGER("ShizukaXMusic.plugins").info("Necessary Modules Imported Successfully.")
+        importlib.import_module("kannadiga.plugins" + all_module)
+    LOGGER("kannadiga.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Shizuka.start()
     try:
-        await Shizuka.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Shizuka.stream_call("https://telegra.ph/file/a54c01288f6f13a767478.mp4")
     except NoActiveGroupCall:
-        LOGGER("ShizukaXMusic").error(
+        LOGGER("kannadiga").error(
             "[ERROR] - \n\nTurn on group voice chat and don't put it off otherwise I'll stop working thanks."
         )
         sys.exit()
     except:
         pass
     await Shizuka.decorators()
-    LOGGER("ShizukaXMusic").info("Music Bot Started Successfully")
+    LOGGER("kannadiga").info("Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("ShizukaXMusic").info("Stopping Music Bot")
+    LOGGER("kannadiga").info("Stopping Music Bot")
