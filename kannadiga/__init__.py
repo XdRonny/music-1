@@ -1,4 +1,4 @@
-from kannadiga.core.bot import kannadiga
+from kannadiga.core.bot import kannadigabot
 from kannadiga.core.dir import dirr
 from kannadiga.core.git import git
 from kannadiga.core.userbot import Userbot
