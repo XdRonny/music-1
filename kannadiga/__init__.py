@@ -1,8 +1,8 @@
-from Agora.core.bot import Agora
-from Agora.core.dir import dirr
-from Agora.core.git import git
-from Agora.core.userbot import Userbot
-from Agora.misc import dbb, heroku, sudo
+from kannadiga.core.bot import kannadiga
+from kannadiga.core.dir import dirr
+from kannadiga.core.git import git
+from kannadiga.core.userbot import Userbot
+from kannadiga.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
