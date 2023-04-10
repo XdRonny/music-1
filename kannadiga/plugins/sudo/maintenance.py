@@ -2,15 +2,15 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from ShizukaXMusic import app
-from ShizukaXMusic.misc import SUDOERS
-from ShizukaXMusic.utils.database import (
+from kannadiga import app
+from kannadiga.misc import SUDOERS
+from kannadiga.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
     maintenance_on,
 )
-from ShizukaXMusic.utils.decorators.language import language
+from kannadiga.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")
