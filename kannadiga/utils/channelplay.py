@@ -1,5 +1,5 @@
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import get_cmode
+from kannadiga import app
+from kannadiga.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
