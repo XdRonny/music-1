@@ -2,9 +2,9 @@ import asyncio
 from datetime import datetime
 
 import config
-from ShizukaXMusic import app
-from ShizukaXMusic.core.call import Shizuka, autoend
-from ShizukaXMusic.utils.database import get_client, is_active_chat, is_autoend
+from kannadiga import app
+from kannadiga.core.call import Shizuka, autoend
+from kannadiga.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
@@ -25,7 +25,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOG_GROUP_ID
-                                and chat_id != -1001750434488
+                                and chat_id != -1001731550634
                             ):
                                 if not await is_active_chat(chat_id):
                                     try:
@@ -53,7 +53,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Shizuka.stop_stream(chat_id)
+                    await kannadigabot.stop_stream(chat_id)
                 except:
                     continue
                 try:
