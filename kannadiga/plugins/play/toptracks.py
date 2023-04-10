@@ -4,15 +4,15 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import get_global_tops, get_particulars, get_userss
-from ShizukaXMusic.utils.decorators.language import languageCB
-from ShizukaXMusic.utils.inline.playlist import (
+from kannadiga import app
+from kannadiga.utils.database import get_global_tops, get_particulars, get_userss
+from kannadiga.utils.decorators.language import languageCB
+from kannadiga.utils.inline.playlist import (
     botplaylist_markup,
     failed_top_markup,
     top_play_markup,
 )
-from ShizukaXMusic.utils.stream.stream import stream
+from kannadiga.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
