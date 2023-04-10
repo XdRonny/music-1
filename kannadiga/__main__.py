@@ -8,7 +8,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from kannadiga import LOGGER, app, userbot
-from kannadiga.core.call import Shizuka
+from kannadiga.core.call import kannadigabot
 from kannadiga.plugins import ALL_MODULES
 from kannadiga.utils.database import get_banned_users, get_gbanned
 
@@ -38,9 +38,9 @@ async def init():
         importlib.import_module("kannadiga.plugins" + all_module)
     LOGGER("kannadiga.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
-    await Shizuka.start()
+    await kannadigabot.start()
     try:
-        await Shizuka.stream_call("https://telegra.ph/file/a54c01288f6f13a767478.mp4")
+        await kannadigabot.stream_call("https://telegra.ph/file/a54c01288f6f13a767478.mp4")
     except NoActiveGroupCall:
         LOGGER("kannadiga").error(
             "[ERROR] - \n\nTurn on group voice chat and don't put it off otherwise I'll stop working thanks."
@@ -48,7 +48,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Shizuka.decorators()
+    await kannadigabot.decorators()
     LOGGER("kannadiga").info("Music Bot Started Successfully")
     await idle()
 
