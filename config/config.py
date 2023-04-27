@@ -30,11 +30,11 @@ UPSTREAM_REPO = getenv(
     "https://github.com/kannadigaXD/music",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/kannadigaXD/music")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/I_am_Messiah_ll")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://kannada_chatbox")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/do_jism_ek_jaan_op")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Bots_Hub_ll")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Ronny_Support_chat")
 
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
@@ -80,18 +80,18 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://graph.org/file/96bb5d6d034785cd2ada4.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://telegra.ph/file/6d569c591486d184d2284.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/96bb5d6d034785cd2ada4.jpg",
+    "https://telegra.ph/file/6d569c591486d184d2284.jpg",
 )
 
-PLAYLIST_IMG_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/6d569c591486d184d2284.jpg"
 
-GLOBAL_IMG_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
+GLOBAL_IMG_URL = "https://telegra.ph/file/9a8ec59f9fa6376c04e7b.jpg"
 
-STATS_IMG_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/9a8ec59f9fa6376c04e7b.jpg"
 
 TELEGRAM_AUDIO_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
 
@@ -134,9 +134,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
+            PING_IMG_URL = "https://telegra.ph/file/6d569c591486d184d2284.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://graph.org/file/96bb5d6d034785cd2ada4.jpg"
+            START_IMG_URL = "https://telegra.ph/file/80e907fd77289b4363fae.jpg"
